@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 1056
+  Height = 729
+  Top = 104
+  Width = 388
+  Caption = 'Form1'
+  ClientHeight = 729
+  ClientWidth = 388
+  LCLVersion = '2.0.12.0'
+  object Pass: TEdit
+    Left = 144
+    Height = 23
+    Top = 48
+    Width = 184
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 15
+    Top = 56
+    Width = 89
+    Caption = 'Путь к файлику:'
+    ParentColor = False
+  end
+  object GroupBox1: TGroupBox
+    Left = 48
+    Height = 224
+    Top = 88
+    Width = 282
+    Caption = 'Ввод продуктов'
+    ClientHeight = 204
+    ClientWidth = 278
+    TabOrder = 1
+    OnClick = GroupBox1Click
+    object Label2: TLabel
+      Left = 8
+      Height = 15
+      Top = 16
+      Width = 76
+      Caption = 'Тип продукта:'
+      ParentColor = False
+    end
+    object ProdType: TEdit
+      Left = 88
+      Height = 23
+      Top = 8
+      Width = 152
+      OnChange = ProdTypeChange
+      TabOrder = 0
+    end
+    object Label3: TLabel
+      Left = 24
+      Height = 15
+      Top = 64
+      Width = 42
+      Caption = 'Кол-во:'
+      ParentColor = False
+    end
+    object CountProd: TEdit
+      Left = 88
+      Height = 23
+      Top = 56
+      Width = 152
+      TabOrder = 1
+    end
+    object Label4: TLabel
+      Left = 24
+      Height = 15
+      Top = 112
+      Width = 31
+      Caption = 'Цена:'
+      ParentColor = False
+    end
+    object CashProd: TEdit
+      Left = 88
+      Height = 23
+      Top = 104
+      Width = 152
+      TabOrder = 2
+    end
+    object Button1: TButton
+      Left = 16
+      Height = 41
+      Top = 152
+      Width = 240
+      Caption = 'Добавить'
+      OnClick = Button1Click
+      TabOrder = 3
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 49
+    Height = 255
+    Top = 329
+    Width = 278
+    Caption = 'Вывод продуктов'
+    ClientHeight = 235
+    ClientWidth = 274
+    TabOrder = 2
+    OnClick = GroupBox2Click
+    object ListBox1: TListBox
+      Left = 6
+      Height = 180
+      Top = 7
+      Width = 263
+      ItemHeight = 0
+      TabOrder = 0
+    end
+    object Button2: TButton
+      Left = 7
+      Height = 36
+      Top = 195
+      Width = 260
+      Caption = 'Вывести'
+      OnClick = Button2Click
+      TabOrder = 1
+    end
+  end
+end
